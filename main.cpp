@@ -35,8 +35,8 @@ int main() {
 
     double OA_work_time = 0;
 
-    cout << setw(18) << "report_in"
-        << setw(20) << "Queue length"
+    cout << setw(15) << "report_in"
+        << setw(15) << "Queue length"
         << setw(25) << "max waiting time"
         << setw(25) << "max waiting id"
         << setw(25) << "average waiting time"
@@ -103,8 +103,8 @@ int main() {
                 }
 
                 if (report_out % 100 == 0) {
-                    cout << setw(18) << report_in
-                        << setw(20) << Q->length
+                    cout << setw(15) << report_in
+                        << setw(15) << Q->length
                         << setw(25) << max_waiting_time
                         << setw(25) << max_waiting_id
                         << setw(25) << sum_waiting_time / report_in
