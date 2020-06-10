@@ -7,7 +7,7 @@ int main() {
     double Time = 0;
     double T1_min = 0, T1_max = 6, T2_min = 0, T2_max = 1;
     double prob = 0.8;
-    int report_count = 1000;
+    int report_count = 10;
 
     cout << ">> T1_min >> T1_max >> T2_min >> T2_max" << endl;
     cin >> T1_min >> T1_max >> T2_min >> T2_max;
@@ -102,13 +102,14 @@ int main() {
                     max_waiting_id = temp->id;
                 }
 
-                if (report_out % 100 == 0) {
+                if (report_out % 1 == 0) {
                     cout << setw(15) << report_in
                         << setw(15) << Q->length
                         << setw(25) << max_waiting_time
                         << setw(25) << max_waiting_id
                         << setw(25) << sum_waiting_time / report_in
                         << endl;
+                    Q->print();
                 }
 
                 //free(temp);
