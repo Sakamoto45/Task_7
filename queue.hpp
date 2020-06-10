@@ -95,7 +95,7 @@ public:
             cout << tempptr->id << " ";
             tempptr = tempptr->next;
         }
-        cout << ".  ";
+        cout << ".  " << endl;
     }
 
     bool is_empty() {
