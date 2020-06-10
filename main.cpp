@@ -9,8 +9,8 @@ int main() {
     double prob = 0.8;
     int report_count = 1000;
 
-    // cout << ">> T1_min >> T1_max >> T2_min >> T2_max" << endl;
-    // cin >> T1_min >> T1_max >> T2_min >> T2_max;
+    cout << ">> T1_min >> T1_max >> T2_min >> T2_max" << endl;
+    cin >> T1_min >> T1_max >> T2_min >> T2_max;
 
     if (T1_min > T1_max || T2_min > T2_max) {
         cout << "time difficulties" << endl;
